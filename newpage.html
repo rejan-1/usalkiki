@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<title>USAL visa process</title>
+<link rel="stylesheet" href="newpage.css">
+
+<!-- box icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<script>
+    function BackToMainPage() {
+        window.location.href = "haha.html";
+    }
+    function GoToNextPage() {
+        window.location.href = 'index.html'; // Adjust to your desired page
+    }
+    function expandCompartment(compartment) {
+        // Collapse all other compartments
+        document.querySelectorAll('.university-compartment').forEach(item => {
+            if (item !== compartment) {
+                item.classList.remove('expanded'); // Collapse others
+            }
+        });
+
+        // Toggle the 'expanded' state of the clicked compartment
+        compartment.classList.toggle('expanded');
+    }
+
+
+</script>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo" onclick="BackToMainPage()">USAL</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active" onclick="BackToMainPage()">Home</a>
+            <a href="#process">USA VIsa Process</a>
+            <a href="#uni">Universities</a>
+            <a href="#skills">Materials</a>
+            <a href="#contact">Contact</a>
+
+
+        </nav>
+    </header>
+    <section class="process" id="process">
+        <h2>USA Visa Process</h2>
+
+
+        <div class="process-row">
+            <div class="process-column">
+
+
+                <div class="process-box">
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Determine the Type of visa</h3>
+                            <p>Description: Identify the visa that fits your purpose of travel.
+                                Common types include:
+                            <ul class="data">
+                                <li>F-1: For students.</li>
+                                <li>B-1/B-2: For business or tourism.</li>
+                                <li>H-1B: For specialized workers</li>
+                                <li> J-1: For exchange visitors.</li>
+                                <li> L-1: For intra-company transferees.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Pay the Visa Fee </h3>
+                            <p>Description: Pay the non-refundable visa application fee online or at designated banks
+                                Fees vary depending on the visa type.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Complete the DS-160 Form </h3>
+                            <p>Description: This is an online application form for non-immigrant visas. <br>
+                                Key Point: Save the DS-160 confirmation number for your visa appointment.
+                            <ul class="data">
+                                <li> Visit the Consular Electronic Application Center (CEAC) website</li>
+                                <li>Provide personal, travel, and security-related information</li>
+                                <li> Upload a passport-sized photograph as per guidelines</li>
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="process-column">
+                <div class="process-box">
+                    <div class="process-content">
+
+                        <div class="content">
+
+                            <h3>Schedule the Appointments</h3>
+                            <p>Description: Book two appointments via the US Visa Application Center (VAC): <br>
+                                Key Point: Ensure the appointments are at least one day apart.
+                            <ul class="data">
+                                <li>
+                                    Biometric Appointment: For fingerprints and a photo.
+                                </li>
+                                <li>
+                                    Visa Interview Appointment: At the US Embassy or Consulate.
+                                </li>
+                            </ul>
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Prepare for the Visa Interview</h3>
+                            <p>Description: Gather and Organize required documents<br>
+                                Key Point: Practice answering common interview questions confidently.
+                            <ul class="data">
+                                <li>Passport (valid for at least six months beyond your intended day)</li>
+                                <li>DS-160 confirmation page</li>
+                                <li>Visa fee payment receipt</li>
+                                <li>i-20 form (for students) or other supporting documents</li>
+
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Attend the Visa Interview</h3>
+                            <p>Key Point: Approval may be given on the spot, or you may need to wait for further
+                                proccessing.
+                            <ul class="data">
+                                <li>Be honest and provide clear answers</li>
+                                <li>Submit additional documents if requested</li>
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+    </section>
+
+
+    <section class="uni" id="uni">
+        <div class="university-container">
+            <div class="university-compartment">
+                <h3>Louisiana Tech University</h3>
+                
+                    <p class="short-description">
+                        Requirments Of University :- <br>
+                        GPA : <br>
+                        EPT : <br>
+                        SAT : <br>
+                        COA : <br>
+                        Scholarships : <br>
+                    <div class="uni-button">
+                        <div class="button-container">
+                            <button class="btn" onclick="location.href='https://www.latech.edu/'">Learn More</button>
+                        </div>
+                    </div>
+                    </p>
+
+            </div>
+            <div class="university-compartment">
+                <h3>Dakota State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://dsu.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="university-compartment">
+                <h3>Webster State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://www.webster.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="university-compartment">
+                <h3>Rowan State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://www.latech.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="university-compartment">
+                <h3>Morehead State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://www.moreheadstate.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="university-compartment">
+                <h3>McNeese State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://www.latech.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="university-compartment">
+                <h3>McNeese State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://www.latech.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="university-compartment">
+                <h3>McNeese State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://www.latech.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class="university-compartment">
+                <h3>McNeese State University</h3>
+                <p class="short-description">
+                    Requirments Of University :- <br>
+                    GPA : <br>
+                    EPT : <br>
+                    SAT : <br>
+                    COA : <br>
+                    Scholarships : <br>
+                <div class="uni-button">
+                    <div class="button-container">
+                        <button class="btn" onclick="location.href='https://www.latech.edu/'">Learn More</button>
+                    </div>
+                </div>
+                </p>
+            </div>
+            
+
+            <div class="button">
+                <button class="btn" onclick="GoToNextPage()"> About More Universities</button>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section>
+
+
+
+
+
+
+
+    </section>
+</body>
+
+</html>

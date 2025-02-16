@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<title>Resources</title>
+<link rel="stylesheet" href="resources.css">
+
+<!-- box icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<script>
+    function BackToMainPage() {
+        window.location.href = "haha.html";
+    }
+    function GoToNextPage() {
+        window.location.href = 'index.html'; // Adjust to your desired page
+    }
+    function expandCompartment(compartment) {
+        // Collapse all other compartments
+        document.querySelectorAll('.university-compartment').forEach(item => {
+            if (item !== compartment) {
+                item.classList.remove('expanded'); // Collapse others
+            }
+        });
+
+        // Toggle the 'expanded' state of the clicked compartment
+        compartment.classList.toggle('expanded');
+    }
+
+
+</script>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo" onclick="BackToMainPage()">USAL</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active" onclick="BackToMainPage()">Home</a>
+            <a href="#process">USA VIsa Process</a>
+            <a href="#uni">Universities</a>
+            <a href="#skills">Materials</a>
+            <a href="#contact">Contact</a>
+
+
+        </nav>
+    </header>
+    <section>
+        <!-- <img src="image/home1.jpg" alt=""> -->
+    </section>
+    <div class="page-head">
+        <h1>USAL's RESOURCES</h1>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="0.7" d="M0,256L0,224L1440,224L1440,0L0,0L0,0Z"></path>
+        
+        Add text on the left side with 50px margin -->
+        <!-- <text x="50" y="150" text-anchor="start" fill="white" font-size="36" font-weight="bold">
+          USAL's RESOURCES
+        </text>
+      </svg> -->
+    </div>
+      
+
+<section class="intro">
+    <div class="english-test">
+        <h1> about english test </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos voluptates nostrum id, recusandae, temporibus inventore tempore nemo libero non expedita laudantium consectetur, accusamus assumenda quibusdam aliquid eius perferendis in!</p>
+    </div>
+    <div class="right-test">
+        <h2>Which Test is Right for You?</h2>
+        <p>Learn about the most recognized English proficiency tests worldwide.</p>
+        </div>
+    </section>
+
+    <div class="test-container">
+        <div class="test-card" id="pte-card">
+            <h3>PTE (Pearson Test of English)</h3>
+            <p>The PTE Academic is a computer-based English test for study abroad and immigration. It assesses your ability in speaking, writing, reading, and listening.</p>
+            <button onclick="toggleDetails('pte-details')">More Info</button>
+            <div class="details" id="pte-details">
+                <ul>
+                    <li><strong>Duration:</strong> 3 hours</li>
+                    <li><strong>Skills tested:</strong> Speaking, Writing, Reading, Listening</li>
+                    <li><strong>Score range:</strong> 10–90</li>
+                    <li><strong>Validity:</strong> 2 years</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-card" id="ielts-card">
+            <h3>IELTS (International English Language Testing System)</h3>
+            <p>The IELTS is one of the most widely recognized English proficiency tests for higher education and migration. It tests your listening, reading, writing, and speaking skills.</p>
+            <button onclick="toggleDetails('ielts-details')">More Info</button>
+            <div class="details" id="ielts-details">
+                <ul>
+                    <li><strong>Duration:</strong> 2 hours 45 minutes</li>
+                    <li><strong>Skills tested:</strong> Speaking, Writing, Reading, Listening</li>
+                    <li><strong>Score range:</strong> 0–9</li>
+                    <li><strong>Validity:</strong> 2 years</li>
+                </ul>
+            </div>
+        </div>
+        <div class="test-card" id="ielts-card">
+            <h3>IELTS (International English Language Testing System)</h3>
+            <p>The IELTS is one of the most widely recognized English proficiency tests for higher education and migration. It tests your listening, reading, writing, and speaking skills.</p>
+            <button onclick="toggleDetails('ielts-details')">More Info</button>
+            <div class="details" id="ielts-details">
+                <ul>
+                    <li><strong>Duration:</strong> 2 hours 45 minutes</li>
+                    <li><strong>Skills tested:</strong> Speaking, Writing, Reading, Listening</li>
+                    <li><strong>Score range:</strong> 0–9</li>
+                    <li><strong>Validity:</strong> 2 years</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-card" id="det-card">
+            <h3>DET (Duolingo English Test)</h3>
+            <p>The DET is a modern, quick English test that is designed to assess the four core language skills: reading, writing, listening, and speaking.</p>
+            <button onclick="toggleDetails('det-details')">More Info</button>
+            <div class="details" id="det-details">
+                <ul>
+                    <li><strong>Duration:</strong> 1 hour</li>
+                    <li><strong>Skills tested:</strong> Speaking, Writing, Reading, Listening</li>
+                    <li><strong>Score range:</strong> 10–160</li>
+                    <li><strong>Validity:</strong> 2 years</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="resource-listkiki">
+        <div class="resourcekiki">
+          <img src="/image/gre.jpg" alt="Resource Thumbnail">
+          <h4>IELTS Speaking Practice</h4>
+          <p>Download our comprehensive IELTS speaking practice guide.</p>
+          <div class="resource-button">
+            <button>Download</button>
+            <button>View Now</button>
+        </div>
+        </div>
+        <div class="resourcekiki">
+          <img src="/image/gmat.png" alt="Resource Thumbnail">
+          <h4>GRE Vocabulary List</h4>
+          <p>Learn essential GRE vocabulary with our downloadable list.</p>
+          <div class="resource-button">
+            <button>Download</button>
+            <button>View Now</button>
+        </div>
+        </div>
+        <div class="resourcekiki">
+            <img src="/image/ielts.jpg" alt="Resource Thumbnail" >
+            <h4>IELTS Speaking Practice</h4>
+            <p>Download our comprehensive IELTS speaking practice guide.</p>
+            <div class="resource-button">
+                <button>Download</button>
+                <button>View Now</button>
+            </div>
+          </div>
+          <div class="resourcekiki">
+            <img src="/image/pte.jpg" alt="Resource Thumbnail" >
+            <h4>IELTS Speaking Practice</h4>
+            <p>Download our comprehensive IELTS speaking practice guide.</p>
+            <div class="resource-button">
+                <button>Download</button>
+                <button>View Now</button>
+            </div>
+          </div>
+          <div class="resourcekiki">
+            <img src="/image/sat.png" alt="Resource Thumbnail" >
+            <h4>IELTS Speaking Practice</h4>
+            <p>Download our comprehensive IELTS speaking practice guide.</p>
+            <div class="resource-button">
+                <button>Download</button>
+                <button>View Now</button>
+            </div>
+          </div>
+          <div class="resourcekiki">
+            <img src="/image/ielts.jpg" alt="Resource Thumbnail" >
+            <h4>IELTS Speaking Practice</h4>
+            <p>Download our comprehensive IELTS speaking practice guide.</p>
+            <div class="resource-button">
+                <button>Download</button>
+                <button>View Now</button>
+            </div>
+          </div>
+          <div class="resourcekiki">
+            <img src="/image/ielts.webp" alt="Resource Thumbnail"  >
+            <h4>IELTS Speaking Practice</h4>
+            <p>Download our comprehensive IELTS speaking practice guide.</p>
+            <div class="resource-button">
+                <button>Download</button>
+                <button>View Now</button>
+            </div>
+          </div>
+          <div class="resourcekiki">
+            <img src="/image/pte.jpg" alt="Resource Thumbnail" >
+            <h4>IELTS Speaking Practice</h4>
+            <p>Download our comprehensive IELTS speaking practice guide.</p>
+            <div class="resource-button">
+                <button>Download</button>
+                <button>View Now</button>
+            </div>
+          </div>
+        <!-- Add more resources here -->
+      </section>
+
+    <section>
+
+        <!-- <div class="resource">
+            <h1>Resources & Materials</h1>
+
+            <div class="resources-compartment">
+                <div class="resources-content">
+                    <img src="image/ielts.jpg" class="ielts">
+
+                </div>
+                <div class="resources-content">
+                    <img src="image/pte.jpg" class="pte">
+
+                </div>
+                <div class="resources-content">
+                    <img src="image/sat.png" class="sat">
+
+                </div>
+                <div class="resources-content">
+                    <img src="image/gre.jpg" class="gre">
+
+                </div>
+                <div class="resources-content">
+                    <img src="image/gmat.png" class="gmat">
+
+                </div>
+            </div>
+            <div class="resources-compartment">
+                <div class="resources-content">
+                    <p>IELTS</p>
+
+                </div>
+                <div class="resources-content">
+                    <p>PTE</p>
+
+                </div>
+                <div class="resources-content">
+                    <p>SAT</p>
+
+                </div>
+                <div class="resources-content">
+                    <p>GRE</p>
+
+                </div>
+                <div class="resources-content">
+                    <p>GMAT</p>
+
+                </div>
+            </div>
+            <div class="resources-button">
+                <button class="btn">For Resources And Materials</button>
+            </div>
+
+
+
+        </div> -->
+
+    </section>
+    <section class="process" id="process">
+        <h2>USA Visa Process</h2>
+
+
+        <div class="process-row">
+            <div class="process-column">
+
+
+                <div class="process-box">
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Determine the Type of visa</h3>
+                            <p>Description: Identify the visa that fits your purpose of travel.
+                                Common types include:
+                            <ul class="data">
+                                <li>F-1: For students.</li>
+                                <li>B-1/B-2: For business or tourism.</li>
+                                <li>H-1B: For specialized workers</li>
+                                <li> J-1: For exchange visitors.</li>
+                                <li> L-1: For intra-company transferees.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Pay the Visa Fee </h3>
+                            <p>Description: Pay the non-refundable visa application fee online or at designated banks
+                                Fees vary depending on the visa type.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Complete the DS-160 Form </h3>
+                            <p>Description: This is an online application form for non-immigrant visas. <br>
+                                Key Point: Save the DS-160 confirmation number for your visa appointment.
+                            <ul class="data">
+                                <li> Visit the Consular Electronic Application Center (CEAC) website</li>
+                                <li>Provide personal, travel, and security-related information</li>
+                                <li> Upload a passport-sized photograph as per guidelines</li>
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="process-column">
+                <div class="process-box">
+                    <div class="process-content">
+
+                        <div class="content">
+
+                            <h3>Schedule the Appointments</h3>
+                            <p>Description: Book two appointments via the US Visa Application Center (VAC): <br>
+                                Key Point: Ensure the appointments are at least one day apart.
+                            <ul class="data">
+                                <li>
+                                    Biometric Appointment: For fingerprints and a photo.
+                                </li>
+                                <li>
+                                    Visa Interview Appointment: At the US Embassy or Consulate.
+                                </li>
+                            </ul>
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Prepare for the Visa Interview</h3>
+                            <p>Description: Gather and Organize required documents<br>
+                                Key Point: Practice answering common interview questions confidently.
+                            <ul class="data">
+                                <li>Passport (valid for at least six months beyond your intended day)</li>
+                                <li>DS-160 confirmation page</li>
+                                <li>Visa fee payment receipt</li>
+                                <li>i-20 form (for students) or other supporting documents</li>
+
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-content">
+                        <div class="content">
+
+                            <h3>Attend the Visa Interview</h3>
+                            <p>Key Point: Approval may be given on the spot, or you may need to wait for further
+                                proccessing.
+                            <ul class="data">
+                                <li>Be honest and provide clear answers</li>
+                                <li>Submit additional documents if requested</li>
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+    </section>
+        
+        <section class="tips">
+            <h2>Tips for F1 Visa Interview</h2>
+            <div class="tip-card" id="tip1">
+                <h3>Be Honest and Confident</h3>
+                <p>Honesty is the best policy. Be confident in your answers, and make sure to provide truthful and clear information.</p>
+            </div>
+            <div class="tip-card" id="tip2">
+                <h3>Know Your University and Program</h3>
+                <p>Be prepared to explain why you chose your university and what you plan to study. Research the institution well.</p>
+            </div>
+            <div class="tip-card" id="tip3">
+                <h3>Financial Stability</h3>
+                <p>Be ready to prove you have enough financial support for your studies in the US. Have documents like bank statements ready.</p>
+            </div>
+        </section>
+    
+        <section class="resources">
+            <h2>Helpful Resources</h2>
+            <p>Here are some useful resources to help you with your F1 Visa application process:</p>
+            <ul>
+                <li><a href="https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html" target="_blank">US Department of State: F1 Visa Information</a></li>
+                <li><a href="https://www.uscis.gov/working-united-states/temporary-workers/f-1-students" target="_blank">USCIS: F1 Students</a></li>
+                <li><a href="https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-type/college-scholarships-for-international-students/" target="_blank">Scholarships for International Students</a></li>
+            </ul>
+        </section>
+    
+        <section class="sample-questions">
+            <h2>Sample F1 Visa Interview Questions & Answers</h2>
+            <div class="question-card">
+                <h3>Question 1: Why do you want to study in the United States?</h3>
+                <button onclick="toggleAnswer('answer1')">Show Answer</button>
+                <div class="answer" id="answer1">
+                    <p>I want to study in the United States because it offers world-class education and exposure to diverse cultures. The program I have chosen aligns perfectly with my career goals, and I believe studying at this university will help me achieve them.</p>
+                </div>
+            </div>
+    
+            <div class="question-card">
+                <h3>Question 2: How do you plan to finance your studies?</h3>
+                <button onclick="toggleAnswer('answer2')">Show Answer</button>
+                <div class="answer" id="answer2">
+                    <p>I have sufficient savings in my family’s account, and I also have a scholarship that will cover part of my tuition fees. I’ve brought the necessary documents, including bank statements and scholarship letters, to demonstrate my financial stability.</p>
+                </div>
+            </div>
+    
+            <div class="question-card">
+                <h3>Question 3: What are your plans after graduation?</h3>
+                <button onclick="toggleAnswer('answer3')">Show Answer</button>
+                <div class="answer" id="answer3">
+                    <p>After completing my studies, I plan to return to my home country to apply the knowledge and skills I’ve gained to contribute to the growth of my community and profession. I intend to work with an international company to gain valuable experience before eventually pursuing further studies or a professional career.</p>
+                </div>
+            </div>
+ </section>
+    
+
+  
+       
+
+     <section class="upload-section">
+        <h2>Upload Your Resource</h2>
+        <button class="upload-btn">Upload Resource</button>-
+        <div class="upload-area">
+          <input type="file" class="file-upload">
+          <textarea  placeholder="Resource Description"></textarea>
+        </div>
+        <button class="upload-btn">Upload Resource</button>
+    </section>
+    
+   <script>
+    function toggleDetails(testDetailsId) {
+    const detailsElement = document.getElementById(testDetailsId);
+    if (detailsElement.style.display === 'block') {
+        detailsElement.style.display = 'none';
+    } else {
+        detailsElement.style.display = 'block';
+    }
+}
+
+function toggleAnswer(answerId) {
+    const answerElement = document.getElementById(answerId);
+    if (answerElement.style.display === 'block') {
+        answerElement.style.display = 'none';
+    } else {
+        answerElement.style.display = 'block';
+    }
+}
+
+
+   </script>
+</body>
+
+</html

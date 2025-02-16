@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif, monospace, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #0da1f1;
+    --main-color: #e95632;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    /*background-color: #e95632;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.3;
+}
+
+.btn {
+    color: var(--main-color);
+    background-color: rgb(83, 210, 144);
+    border: none;
+    padding: 15px 30px;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    color: var(--text-color);
+    transform: scale(1.25);
+}
+
+
+.logo {
+    position: relative;
+    font-size: 4rem;
+    color: #1ABC9C;
+    font-weight: 600;
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 1% 2rem;
+}
+
+
+.navbar {
+    position: relative;
+   
+}
+
+.navbar a {
+    font-size: 1.6rem;
+    color: #1ABC9C;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    position: fixed;
+    font-size: 5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+.process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-top: 6rem;
+}
+
+.process h2 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.process .process-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.process-row .process-column {
+    flex: 1 1 40rem;
+}
+
+
+
+.process-column .process-box {
+    position: relative;
+    border-left: .2rem solid var(--main-color);
+}
+
+.process-box .process-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.process-box .process-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.process-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    color: var(--second-bg-color);
+}
+
+.process-content .content:hover {
+    color: var(--text-color);
+}
+
+.process-content .content:hover::before {
+    width: 100%;
+}
+
+.container{
+display: flex;
+}
+
+
+.process-content .content h3 {
+    font-size: 2rem;
+}
+
+.process-content .content p {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+
+
+.data {
+    font-size: 1.6rem;
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+.university-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    height: 50rem;
+}
+  
+  .university-compartment {
+    flex: 1 1 calc(30% - 1rem);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
+    overflow: hidden;
+    position: relative;
+    height: 9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  }
+  
+.university-compartment:hover {
+    transform: translateY(-5px);
+    background-color: #fc7e00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 43rem; /* Expanded height */
+ }
+
+
+
+  .university-compartment h3 {
+    margin: 0;                                                                                            
+    font-size: 3rem;
+    color: #333;
+    padding-left: 2.5rem;
+    padding-top: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    background-color: aqua;
+    border-radius: 4px;
+  }
+  
+  .short-description {
+    font-size: 2rem;
+    padding-top: 20px;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  
+  
+  
+  .uni-button{
+    padding-left: 13.5rem;
+    padding-top: 2rem;
+  }
+  
+  .university-compartment .uni{
+    font-size: 2.4rem;
+    padding-left: 2rem;
+    color: var(--bg-color);
+    font-weight: 500;
+    
+  }
+  
+  .university-container .button{
+    padding-left: 60rem;
+    
+  }
+
+  .university-container .btn{
+    background-color: aqua;
+    font-weight: 600;
+  }
+  .university-container .btn:hover{
+    color: var(--bg-color);
+  }
+
+  
+  /* Responsive Media Queries */
+  
+  /* For devices under 768px width */
+  @media screen and (max-width: 768px) {
+      html {
+          font-size: 50%;
+      }
+  
+      .header {
+          padding: 1.5rem 5%;
+      }
+  
+      .logo {
+          font-size: 3rem;
+      }
+  
+      .navbar a {
+          font-size: 1.4rem;
+          margin-left: 1.5rem;
+      }
+  
+      #menu-icon {
+          display: block;
+      }
+  
+      section {
+          padding: 8rem 2% 2rem;
+      }
+  
+      /* Process Section */
+      .process h2 {
+          font-size: 3.5rem;
+      }
+  
+      .process-row {
+          flex-direction: column;
+          gap: 1.5rem;
+      }
+  
+      .process-column {
+          flex: 1 1 100%;
+      }
+  
+      .university-container {
+          flex-direction: column;
+          gap: 2rem;
+          height: auto;
+      }
+  
+      .university-compartment {
+          flex: 1 1 100%;
+          height: auto;
+      }
+  
+      .university-compartment h3 {
+          font-size: 2.4rem;
+      }
+  
+      .uni-button {
+          padding-left: 3rem;
+      }
+  
+      .university-compartment .uni {
+          font-size: 2rem;
+      }
+  
+      .btn {
+          font-size: 1.8rem;
+      }
+  }
+  
+  /* For devices under 480px width (extra small devices) */
+  @media screen and (max-width: 480px) {
+      html {
+          font-size: 45%;
+      }
+  
+      .header {
+          padding: 1rem 3%;
+      }
+  
+      .logo {
+          font-size: 2.5rem;
+      }
+  
+      .navbar a {
+          font-size: 1.2rem;
+          margin-left: 1rem;
+      }
+  
+      section {
+          padding: 7rem 1.5% 2rem;
+      }
+  
+      .process h2 {
+          font-size: 3rem;
+      }
+  
+      .process-row {
+          flex-direction: column;
+          gap: 1rem;
+      }
+  
+      .process-column {
+          flex: 1 1 100%;
+          margin-bottom: 2rem;
+      }
+  
+      .university-compartment {
+          flex: 1 1 100%;
+          height: auto;
+      }
+  
+      .university-compartment h3 {
+          font-size: 2.2rem;
+      }
+  
+      .short-description {
+          font-size: 2rem;
+          padding-top: 1rem;
+      }
+  
+      .uni-button {
+          padding-left: 2rem;
+      }
+  
+      .university-compartment .uni {
+          font-size: 1.8rem;
+      }
+  
+      .btn {
+          font-size: 1.6rem;
+      }
+  }
+  
